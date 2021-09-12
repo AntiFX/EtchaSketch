@@ -16,7 +16,6 @@
 }
 .gridSq {
     display:grid;
-    background-color: blue;
     grid-auto-columns: 1fr;
     border: rgba(0,0,0,.4);
     border-style: solid;
