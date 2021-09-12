@@ -1,0 +1,24 @@
+.body{
+    display:grid;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.entireGrid {
+    display:grid;
+    background-color: red;
+    justify-self: center;
+    align-self: center;
+    width: 75vw;
+    height: 75vh;
+}
+.gridSq {
+    display:grid;
+    background-color: blue;
+    grid-auto-columns: 1fr;
+    border: black;
+    border-style: solid;
+    border-width: 2px;
+}
