@@ -8,7 +8,7 @@
 
 .entireGrid {
     display:grid;
-    background-color: red;
+    background-color: white;
     justify-self: center;
     align-self: center;
     width: 65vw;
