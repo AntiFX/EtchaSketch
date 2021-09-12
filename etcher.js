@@ -1,5 +1,6 @@
 let gridSize = 16;
 let color = 'black';
+let startColor = 'white';
 const entireGrid = document.querySelector('.entireGrid');
 entireGrid.setAttribute('style', 'display:grid;grid-template-columns: repeat('+ gridSize +', 1fr); grid-template-rows: repeat('+gridSize+', 1fr);');
 
@@ -9,6 +10,10 @@ function addHover(item){
     });
 }
 
+function resetGrid(){
+    let gridItems = document.querySelectorAll('.gridSq');
+    gridItems.forEach((e) => {e.style['background-color'] = startColor});
+}
 
 function createGrid(gridSize){
     let columns = gridSize;
@@ -30,12 +35,5 @@ createGrid(gridSize);
 const gridItems = document.querySelectorAll('.gridSq');
 gridItems.forEach((e) => {addHover(e)});
 
-/* gridItems.addEventListener('mouseover', (e) => {
-  console.log(e);
-}); */
-
-
-//make a grid
-//make a hover effect when hovering over a gridsq
-//change a grid sq color when it is hovered over
-//add a button to clear the grid once
+const reset = document.querySelector('.reset');
+reset.addEventListener('click', resetGrid);
